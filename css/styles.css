@@ -146,7 +146,7 @@ body { font-family: 'Archivo', 'Inter', system-ui, -apple-system, Segoe UI, Robo
 .site-footer__bar { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.1); display: flex; justify-content: space-between; font-family: 'Inter',sans-serif; font-weight: 300; font-size: 16px; }
 .site-footer__left, .site-footer__right { opacity: 0.9; }
 .site-footer__right { text-align: right; }
-.site-footer__fine-print { margin-top: 12px; padding-top: 16px;  font-family: 'Inter',sans-serif; font-weight: 300; font-size: 13px; color: #B1B1B1; line-height: 1.5; }
+.site-footer__fine-print { margin-top: 10px; padding-top: 16px;  font-family: 'Inter',sans-serif; font-weight: 300; font-size: 12px; color: #B1B1B1; line-height: 1.5; }
 
 /* Section mobile responsiveness */
 @media (max-width: 768px) {
