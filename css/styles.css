@@ -1,5 +1,6 @@
 /* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 html, body { height: 100%; }
 body { font-family: 'Archivo', 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #fff; background: #000; }
 
@@ -44,17 +45,22 @@ body { font-family: 'Archivo', 'Inter', system-ui, -apple-system, Segoe UI, Robo
 .purpose__title { text-align: center; font-family: 'Archivo', sans-serif; font-weight: 600; font-size: clamp(36px, 6vw, 64px); line-height: 1.05; text-transform: uppercase; }
 .purpose__desc { margin: 16px auto 40px; max-width: 820px; text-align: center; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: 20px; line-height: 1.2; }
 
-.purpose__cards { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
+.purpose__cards { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; margin-top: 40px; }
 
 .card { position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 26px -2.75px rgba(0,0,0,0.18), 0 2.29px 5.95px -1.83px rgba(0,0,0,0.21), 0 0.6px 1.57px -0.92px rgba(0,0,0,0.22), 0 0 0 1px rgba(0,0,0,0.15); }
-.card__img { width: 100%; height: 260px; object-fit: cover; display: block; }
-.card__body { padding: 18px 20px 22px; color: #fff; font-family: 'Archivo', sans-serif; }
-.card__title { margin: 0 0 8px; font-weight: 600; font-size: 26px; }
-.card__text { margin: 0; font-weight: 400; font-size: 16px; line-height: 1.35; opacity: 0.95; }
+.card__img { width: calc(100% - 9.6px); height: 260px; object-fit: cover; display: block; margin: 4.8px; border-radius: 8px; }
+.card__body { padding: 8px 20px 22px; color: #F0FED0; font-family: 'Archivo', sans-serif; }
+.card__title { margin: 0 0 8px; font-weight: 400; font-size: 30px; line-height: 1.152; letter-spacing: -0.0384em; }
+.card__text { margin: 0; font-weight: 300; font-size: 20px; line-height: 1.15; letter-spacing: -0.0576em; }
 
 .card--green { background: #1A4228; }
 .card--blue { background: #1B2E73; }
 .card--purple { background: #561A3E; }
+
+/* Per-card text colors from Figma */
+.card--green .card__body { color: #F0FED0; }
+.card--blue .card__body { color: #B5CFFF; }
+.card--purple .card__body { color: #FFA8F3; }
 
 /* Overlap and elevation styling similar to Figma */
 .card--center { transform: translateY(-40px); z-index: 2; }
@@ -147,8 +153,8 @@ body { font-family: 'Archivo', 'Inter', system-ui, -apple-system, Segoe UI, Robo
   .purpose { padding: 60px 16px 80px; }
   .purpose__desc { font-size: 18px; }
   .card__img { height: 220px; }
-  .card__title { font-size: 22px; }
-  .card__text { font-size: 15px; }
+  .card__title { font-size: 26px; }
+  .card__text { font-size: 18px; font-weight: 300  ; }
 
   /* Community */
   .community__desc { font-size: 20px; }
@@ -182,6 +188,8 @@ body { font-family: 'Archivo', 'Inter', system-ui, -apple-system, Segoe UI, Robo
 @media (max-width: 480px) {
   .btn { height: 46px; padding: 0 18px; }
   .card__img { height: 190px; }
+  .card__title { font-size: 24px; }
+  .card__text { font-size: 16px; }
   .discover__title { font-size: 36px; }
   .discover__dots .dot { width: 12px; height: 12px; }
   .opportunity__cta, .meaning .btn, .community .btn--outline { width: 200px; }
