@@ -168,7 +168,7 @@ body { font-family: 'Archivo', 'Inter', system-ui, -apple-system, Segoe UI, Robo
 
   /* Meaning */
   .meaning { height: auto; }
-  .meaning__content { padding-top: 160px; }
+  .meaning__content { padding-top: 160px; padding-left: 24px; padding-right: 24px; padding-bottom: 60px; }
   .meaning .btn { width: 220px; }
 
   /* Opportunity */
